@@ -13,12 +13,12 @@ import java.util.Map;
  */
 public class FrequentTerms {
 	
-	static int len;
+    static int len;
     static String[] heap;
     static Map<String,Integer> map;
     
-	public static void main(String[] args) throws Exception{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) throws Exception{
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = br.readLine();
         int n = Integer.parseInt(line);
         map = new HashMap<String,Integer>();
@@ -54,7 +54,7 @@ public class FrequentTerms {
         	last--;     	
         }
         
-	}
+    }
 	
 	public static void buildHeap(int index){
 		int p = index/2;
